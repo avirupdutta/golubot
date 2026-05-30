@@ -1,0 +1,8 @@
+name: golubot
+engine: opencode
+gateway:
+  port: 3000
+channels:
+  slack:
+    botToken: ${SLACK_BOT_TOKEN} # xoxb-...
+    appToken: ${SLACK_APP_TOKEN} # xapp-...

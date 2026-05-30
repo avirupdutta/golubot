@@ -1,0 +1,16 @@
+{
+  "name": "golubot",
+  "version": "1.0.0",
+  "description": "A GolemBot-based research assistant that helps with systematic information gathering, competitive analysis, and research report generation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@slack/bolt": "^4.7.3"
+  }
+}

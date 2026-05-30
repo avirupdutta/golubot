@@ -1,0 +1,15 @@
+.golem/
+.opencode/
+node_modules/
+dist/
+build/
+coverage/
+*.log
+*.tmp
+*.DS_Store
+*.zip
+.env
+.env.local
+.env.development
+.env.test
+.env.production
