@@ -4,13 +4,15 @@
   "description": "A GolemBot-based research assistant that helps with systematic information gathering, competitive analysis, and research report generation.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "golembot gateway"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@slack/bolt": "^4.7.3"
+    "@slack/bolt": "^4.7.3",
+    "golembot": "^0.47.1"
   }
 }
