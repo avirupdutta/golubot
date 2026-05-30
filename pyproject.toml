@@ -1,0 +1,36 @@
+[project]
+name = "golubot"
+version = "0.1.0"
+description = "Slack bot backend built with FastAPI and Agno AgentOS."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "agno[slack]>=2.3.0",
+    "fastapi>=0.124.0",
+    "openai>=2.8.0",
+    "python-dotenv>=1.2.0",
+    "slack-sdk>=3.39.0",
+    "uvicorn[standard]>=0.38.0",
+]
+
+[project.scripts]
+uvicorn = "backend.cli:uvicorn"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.0",
+    "pytest>=9.0.0",
+]
+
+[tool.uv]
+package = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["backend"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "golembot gateway"
+    "start": "golembot gateway",
+    "backend:dev": "uv run uvicorn backend.golubot:app --reload",
+    "backend:start": "uv run python -m backend.golubot",
+    "backend:test": "uv run pytest"
   },
   "keywords": [],
   "author": "",

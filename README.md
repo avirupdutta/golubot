@@ -1,14 +1,55 @@
-# Research Assistant Template
+# Golubot
 
-A GolemBot-based research assistant that helps with systematic information gathering, competitive analysis, and research report generation.
+A Slack bot backend built with FastAPI and Agno AgentOS.
 
-## Quick Start
+## Python Backend
 
-1. Run `golembot run`
-2. Enter your research request, e.g. "Compare and analyze the leading project management tools"
-3. The assistant will automatically gather information and generate a report
+Install and run the backend with UV:
 
-## File Overview
+```bash
+uv sync
+uv run uvicorn backend.golubot:app --reload
+```
 
-- `research/` — Research report directory
-- `sources.md` — Reference materials collection
+The shorter module entrypoint also works:
+
+```bash
+uv run uvicorn backend
+```
+
+This project wraps that shorthand to run `backend.golubot:app` with `--reload`.
+
+You can also use the module entrypoint:
+
+```bash
+uv run python -m backend.golubot
+```
+
+The app exposes:
+
+- `GET /health` from Agno AgentOS
+- `GET /healthz` app-specific health check
+- `POST /slack/events` when `SLACK_TOKEN` and `SLACK_SIGNING_SECRET` are set
+
+Copy `.env.example` to `.env` and fill in the values before connecting Slack:
+
+```bash
+OPENAI_API_KEY=...
+OPENAI_MODEL=gpt-5.4-mini
+SLACK_TOKEN=xoxb-...
+SLACK_SIGNING_SECRET=...
+```
+
+Run tests:
+
+```bash
+uv run pytest
+```
+
+## Node/GolemBot
+
+The existing gateway command is still available:
+
+```bash
+pnpm start
+```
