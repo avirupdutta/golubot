@@ -19,7 +19,11 @@ def build_interfaces(agent: Agent) -> list[Slack]:
 
 agent = Agent(
     name="Assistant",
-    model=OpenAIResponses(id=os.getenv("OPENAI_MODEL", "gpt-5.4-mini")),
+    model=OpenAIResponses(
+        id=os.getenv("OPENAI_MODEL", "gpt-5.4-mini"), reasoning_effort="medium"
+    ),
+    debug_mode=True,
+    debug_level=2,
 )
 
 agent_os = AgentOS(
