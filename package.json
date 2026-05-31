@@ -1,13 +1,13 @@
 {
-  "name": "golubot",
+  "name": "lancelot",
   "version": "1.0.0",
   "description": "A GolemBot-based research assistant that helps with systematic information gathering, competitive analysis, and research report generation.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "golembot gateway",
-    "backend:dev": "uv run uvicorn backend.golubot:app --reload",
-    "backend:start": "uv run python -m backend.golubot",
+    "backend:dev": "uv run uvicorn backend.lancelot:app --reload",
+    "backend:start": "uv run python -m backend.lancelot",
     "backend:test": "uv run pytest"
   },
   "keywords": [],

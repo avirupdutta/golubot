@@ -1,4 +1,4 @@
-# Golubot
+# Lancelot
 
 A Slack bot backend built with FastAPI and Agno AgentOS.
 
@@ -8,7 +8,7 @@ Install and run the backend with UV:
 
 ```bash
 uv sync
-uv run uvicorn backend.golubot:app --reload
+uv run uvicorn backend.lancelot:app --reload
 ```
 
 The shorter module entrypoint also works:
@@ -17,12 +17,12 @@ The shorter module entrypoint also works:
 uv run uvicorn backend
 ```
 
-This project wraps that shorthand to run `backend.golubot:app` with `--reload`.
+This project wraps that shorthand to run `backend.lancelot:app` with `--reload`.
 
 You can also use the module entrypoint:
 
 ```bash
-uv run python -m backend.golubot
+uv run python -m backend.lancelot
 ```
 
 The app exposes:

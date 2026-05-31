@@ -1,4 +1,4 @@
-name: golubot
+name: lancelot
 engine: opencode
 gateway:
   port: 3000

@@ -1,5 +1,5 @@
 [project]
-name = "golubot"
+name = "lancelot"
 version = "0.1.0"
 description = "Slack bot backend built with FastAPI and Agno AgentOS."
 readme = "README.md"

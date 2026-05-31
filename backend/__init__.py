@@ -1,5 +1,5 @@
-"""ASGI entrypoint for the Golubot backend."""
+"""ASGI entrypoint for the Lancelot backend."""
 
-from backend.golubot import app
+from backend.lancelot import app
 
 __all__ = ["app"]
