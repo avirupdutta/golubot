@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "golembot gateway",
-    "backend:dev": "uv run uvicorn backend.lancelot:app --reload",
-    "backend:start": "uv run python -m backend.lancelot",
+    "backend:dev": "uv run uvicorn backend.app:app --reload",
+    "backend:start": "uv run python -m backend.app",
     "backend:test": "uv run pytest"
   },
   "keywords": [],

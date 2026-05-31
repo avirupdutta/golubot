@@ -8,7 +8,7 @@ Install and run the backend with UV:
 
 ```bash
 uv sync
-uv run uvicorn backend.lancelot:app --reload
+uv run uvicorn backend.app:app --reload
 ```
 
 The shorter module entrypoint also works:
@@ -17,12 +17,12 @@ The shorter module entrypoint also works:
 uv run uvicorn backend
 ```
 
-This project wraps that shorthand to run `backend.lancelot:app` with `--reload`.
+This project wraps that shorthand to run `backend.app:app` with `--reload`.
 
 You can also use the module entrypoint:
 
 ```bash
-uv run python -m backend.lancelot
+uv run python -m backend.app
 ```
 
 The app exposes:
