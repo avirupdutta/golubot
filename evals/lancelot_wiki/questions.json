@@ -1,0 +1,702 @@
+[
+  {
+    "id": "LQ-001",
+    "difficulty": "easy",
+    "category": "payments",
+    "question": "What is the Adult Athlete membership fee, and what total fee should be shown when the background-verification fee is included?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-002",
+    "difficulty": "easy",
+    "category": "payments",
+    "question": "What is the Minor Athlete membership fee per season?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-003",
+    "difficulty": "easy",
+    "category": "payments",
+    "question": "What is the Coach membership fee, and what is the Junior Coach fee?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-004",
+    "difficulty": "easy",
+    "category": "payments",
+    "question": "What is the Legality Official training fee?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-005",
+    "difficulty": "easy",
+    "category": "identity",
+    "question": "What is the default OTP expiry window?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-006",
+    "difficulty": "easy",
+    "category": "identity",
+    "question": "How many OTP resend attempts are allowed per hour, and what is the minimum gap between resend attempts?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-007",
+    "difficulty": "easy",
+    "category": "identity",
+    "question": "After how many wrong OTP submissions does lockout occur, and how long does the lockout last?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-008",
+    "difficulty": "easy",
+    "category": "identity",
+    "question": "What does Green Light status mean in the USASF wiki?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-009",
+    "difficulty": "easy",
+    "category": "identity",
+    "question": "What public-facing term must be used instead of blacklist?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-010",
+    "difficulty": "easy",
+    "category": "integrations",
+    "question": "Which provider handles background checks and identity verification for USASF?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-011",
+    "difficulty": "easy",
+    "category": "integrations",
+    "question": "What is the Maxient feed delimiter and how many fields are in each line?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-012",
+    "difficulty": "easy",
+    "category": "integrations",
+    "question": "What is the maximum length of the Immutable Member ID required by Maxient?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-013",
+    "difficulty": "easy",
+    "category": "roster",
+    "question": "What is the cheer crossover limit at a single USASF sanctioned competition?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-014",
+    "difficulty": "easy",
+    "category": "worlds",
+    "question": "At Worlds, how many teams can a cheer athlete be on and how many teams can a dance athlete be on?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-015",
+    "difficulty": "easy",
+    "category": "worlds",
+    "question": "What is the approximate prepared-club Worlds appointment duration?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-016",
+    "difficulty": "easy",
+    "category": "admin",
+    "question": "What is the Division I athlete threshold?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-017",
+    "difficulty": "easy",
+    "category": "admin",
+    "question": "For which Division I over-threshold counts does the club-facing override request option appear?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-018",
+    "difficulty": "easy",
+    "category": "onboarding",
+    "question": "How many distinct onboarding flows are listed in the Onboarding Workflows concept page?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-019",
+    "difficulty": "easy",
+    "category": "onboarding",
+    "question": "Which onboarding flow is invite-only and has no public signup?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-020",
+    "difficulty": "easy",
+    "category": "onboarding",
+    "question": "Which profile types are described as having a zero-dollar Exceptional Athlete fee?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-021",
+    "difficulty": "medium",
+    "category": "onboarding",
+    "question": "Summarize the shared member onboarding scaffold in order, including where agreements, payment, dashboard entry, and compliance gates occur.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-022",
+    "difficulty": "medium",
+    "category": "onboarding",
+    "question": "Compare Adult Athlete onboarding with Parent/Minor onboarding across account ownership, fees, JDP/background checks, training, and post-payment compliance.",
+    "expected_answer_style": "comparison"
+  },
+  {
+    "id": "LQ-023",
+    "difficulty": "medium",
+    "category": "onboarding",
+    "question": "Compare Adult Exceptional Athlete onboarding with Adult Athlete onboarding across fees, background checks, training, and documentation requirements.",
+    "expected_answer_style": "comparison"
+  },
+  {
+    "id": "LQ-024",
+    "difficulty": "medium",
+    "category": "onboarding",
+    "question": "Explain the Adult Athlete post-payment state before all compliance gates are cleared. What can the user access and what remains incomplete?",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-025",
+    "difficulty": "medium",
+    "category": "onboarding",
+    "question": "Describe the Transitional Athlete account-claim process and the current 45-day claim-window rule.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-026",
+    "difficulty": "medium",
+    "category": "onboarding",
+    "question": "Describe the Junior Coach and Junior NCR 18th birthday claim-window rule and how it relates to the Transitional Athlete rule.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-027",
+    "difficulty": "medium",
+    "category": "onboarding",
+    "question": "Compare Jr Coach, Jr NCR, and EA Buddy onboarding or designation requirements, including whether EA Buddy is a standalone profile type.",
+    "expected_answer_style": "comparison"
+  },
+  {
+    "id": "LQ-028",
+    "difficulty": "medium",
+    "category": "identity",
+    "question": "Explain the two-stage hold-list pattern and what happens at Stage 1 versus Stage 2.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-029",
+    "difficulty": "medium",
+    "category": "identity",
+    "question": "Compare Hard Block and Soft Hold outcomes in authentication or hold-list handling.",
+    "expected_answer_style": "comparison"
+  },
+  {
+    "id": "LQ-030",
+    "difficulty": "medium",
+    "category": "identity",
+    "question": "What duplicate-detection heuristic is described from the profile review meeting? Include the primary match and tiebreakers.",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-031",
+    "difficulty": "medium",
+    "category": "identity",
+    "question": "Explain how minor profiles bypass JDP and what compliance mechanism is used instead.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-032",
+    "difficulty": "medium",
+    "category": "identity",
+    "question": "Distinguish Active and Eligible in the two-axis member state model.",
+    "expected_answer_style": "comparison"
+  },
+  {
+    "id": "LQ-033",
+    "difficulty": "medium",
+    "category": "identity",
+    "question": "Explain why minors do not have their own login and how profile ownership changes when they turn 18.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-034",
+    "difficulty": "medium",
+    "category": "roster",
+    "question": "Describe the three connected concerns introduced by the Roster SRS update: Age Grid / Division Rules, Team Management, and Event Rosters.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-035",
+    "difficulty": "medium",
+    "category": "roster",
+    "question": "Explain the Age Grid Editor lifecycle and how seasons move from draft to published.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-036",
+    "difficulty": "medium",
+    "category": "roster",
+    "question": "What is an eligibility snapshot, and why do mid-season rule amendments not invalidate existing snapshots?",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-037",
+    "difficulty": "medium",
+    "category": "roster",
+    "question": "List the five individual eligibility rules for roster assignment described in the Roster System concept page.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-038",
+    "difficulty": "medium",
+    "category": "roster",
+    "question": "Compare cheer, dance, and cheer-to-dance crossover rules.",
+    "expected_answer_style": "comparison"
+  },
+  {
+    "id": "LQ-039",
+    "difficulty": "medium",
+    "category": "roster",
+    "question": "Describe the temporary replacement rule, including notice timing, eligibility, cross-tier limits, and approval requirements.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-040",
+    "difficulty": "medium",
+    "category": "roster",
+    "question": "Explain nightly re-validation and how unresolved flags affect event roster submission.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-041",
+    "difficulty": "medium",
+    "category": "payments",
+    "question": "Compare Self Pay, Club Pay, and zero-dollar flows as they appear across the shared onboarding scaffold and profile-specific variations.",
+    "expected_answer_style": "comparison"
+  },
+  {
+    "id": "LQ-042",
+    "difficulty": "medium",
+    "category": "payments",
+    "question": "What is the Club Pay request expiry window for Coach onboarding, and how is it configured?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-043",
+    "difficulty": "medium",
+    "category": "payments",
+    "question": "What are the EP Cheer tier fees from Bronze through Diamond?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-044",
+    "difficulty": "medium",
+    "category": "payments",
+    "question": "What are the EP Dance tier fees, and what happened to the Dance Gold tier?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-045",
+    "difficulty": "medium",
+    "category": "worlds",
+    "question": "Summarize the Worlds appointment timeline: when scheduling opens, when appointments occur, when the event starts, and when rosters lock.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-046",
+    "difficulty": "medium",
+    "category": "worlds",
+    "question": "What are the approximate Worlds attendance counts for US teams, athletes, and non-US athletes?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-047",
+    "difficulty": "medium",
+    "category": "worlds",
+    "question": "Compare cheer and dance limits for Worlds team participation and warm-up room entries.",
+    "expected_answer_style": "comparison"
+  },
+  {
+    "id": "LQ-048",
+    "difficulty": "medium",
+    "category": "worlds",
+    "question": "What state ID exception is noted for New Jersey and Massachusetts Worlds athletes?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-049",
+    "difficulty": "medium",
+    "category": "admin",
+    "question": "Explain what happens when an admin makes a mid-season division rule change under Admin BL-5.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-050",
+    "difficulty": "medium",
+    "category": "admin",
+    "question": "What is the new platform launch season target?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-051",
+    "difficulty": "medium",
+    "category": "integrations",
+    "question": "Explain how JDP, Cerebrum, VID, and Codebuddy relate to each other in the identity-verification flow.",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-052",
+    "difficulty": "medium",
+    "category": "integrations",
+    "question": "What are the typical VID completion time, manual review time, and unresolvable resubmission rate?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-053",
+    "difficulty": "medium",
+    "category": "integrations",
+    "question": "What data does Maxient receive from USASF, and how is the active member count characterized?",
+    "expected_answer_style": "workflow"
+  },
+  {
+    "id": "LQ-054",
+    "difficulty": "medium",
+    "category": "open-questions",
+    "question": "What open question remains around the Parent/Minor age-verification provider, and what is the current answer?",
+    "expected_answer_style": "fact"
+  },
+  {
+    "id": "LQ-055",
+    "difficulty": "medium",
+    "category": "cross-module",
+    "question": "Compare Timeline and Audit Log retention or purpose, using the wiki's distinction between user-visible history and forensic audit data.",
+    "expected_answer_style": "comparison"
+  },
+  {
+    "id": "LQ-056",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A parent registers a standard Minor Athlete who later turns 18 before April 1. What account, fee, background-check, training, and timing rules apply across Parent/Minor and Transitional Athlete sources?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-057",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A minor athlete turns 18 on or after April 1. What does the wiki say about background-check requirements for that season, and what still needs to happen?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-058",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A club has 127 unique athletes who have taken the floor. Explain the Division I classification, override UI behavior, and who can override on the backend.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-059",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A club has 129 unique athletes who have taken the floor. Explain the Division I classification and why the override request UI does or does not appear.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-060",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "An Adult Athlete has paid but has not completed training, quiz, or JDP clearance. Explain the correct status and dashboard access implications.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-061",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A Minor Exceptional Athlete is added under a Parent Account. Explain account ownership, fee, JDP, training, and age-verification expectations.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-062",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A user wants to call the compliance list a blacklist in a user-facing email. What should Lancelot answer, and what evidence should it cite?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-063",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A dance athlete wants to compete in Intermediate Pom and Premier Jazz at the same event. Is this allowed, and what rule determines the answer?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-064",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A dance athlete wants to compete in Intermediate Pom and Premier Pom at the same event. Is this allowed, and what rule determines the answer?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-065",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A cheer athlete is rostered on four teams at one sanctioned competition. Explain the applicable limit and likely eligibility result.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-066",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A Worlds cheer athlete is listed on two Worlds teams. Explain the Worlds-specific rule and how it differs from regular sanctioned competition crossover limits.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-067",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "An event producer misses closeout and bid assignment 72 hours after an event ends. What deadlines or reminders should the system enforce?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-068",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A prepared club arrives at Worlds with three cheer teams. Estimate the appointment duration using the base and add-on timing rules, and cite the assumptions.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-069",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A roster rule changes mid-season. Explain how eligibility snapshots, impact reports, roster ineligibility, and notifications interact.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-070",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "An athlete assignment was valid under old age-grid rules but the current draft changes the age range. What happens to the existing assignment versus new assignments?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-071",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A cross-tier temporary replacement is requested 36 hours before an event for four athletes on one team. Explain which parts pass and which require or exceed admin approval rules.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-072",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A coach holds more than one profile role. Explain the multi-profile additional role discount and background-check waiver implications.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-073",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A Club Owner also has additional roles. Explain the documented Club Owner fee, NCR fee, and additional-role discount behavior.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-074",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "An Event Producer applies for Dance Gold. Explain the current wiki state for Dance Gold and how Lancelot should express confidence.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-075",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "An established EP hosted 130 All Star Cheer teams last season and previously held Platinum or Gold. Which Cheer tier facts are relevant, and what fee applies if the Diamond criteria are met?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-076",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A parent asks whether their minor needs training videos or JDP before being eligible. Answer using Parent/Minor, Identity Validation, and Onboarding Workflow evidence.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-077",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A Junior Coach invite is created for a 12-year-old. What does the wiki say is known, configurable, or still pending about minimum age?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-078",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "An EA Buddy is proposed for a unified team. What does the wiki say about EA Buddy designation and unified-team restrictions?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-079",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A non-member adult participant is involved in conduct tracking. What model gap or platform need does the glossary identify?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-080",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A member asks why their status is Eligible but not Active. Explain the two-axis state model and likely missing conditions.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-081",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A user receives an email OTP link and asks whether it is separate from OTP. Explain the magic-link relationship to OTP and expiry.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-082",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A user uploads a profile photo and an age-verification document. What file types and size cap should be enforced?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-083",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A Maxient integration engineer asks which ID field is stable across seasons and what launch implication the wiki highlights.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-084",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A training-system engineer asks whether All-Star University is being replaced. Summarize what the wiki says about LearnDash, external users, and API integration.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-085",
+    "difficulty": "hard",
+    "category": "cross-module",
+    "question": "A compliance analyst asks how Green Light relates to training and background verification. Explain using both Identity Validation and Glossary evidence.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-086",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "The provisional Transitional Athlete SRS used a June 1 cutoff, but later notes mention a 45-day claim window and April 1 BGC cutoff. Resolve the current rule set and identify what is superseded.",
+    "expected_answer_style": "conflict-resolution"
+  },
+  {
+    "id": "LQ-087",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "The Onboarding Workflows page says Parent/Minor age verification vendor was originally unnamed, but later says NSID today. How should Lancelot answer if asked for the vendor?",
+    "expected_answer_style": "conflict-resolution"
+  },
+  {
+    "id": "LQ-088",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "Adult Athlete fee information appears as $49 membership, $19 background verification, and a $68 total display. Explain the correct user-facing payment answer and any nuance.",
+    "expected_answer_style": "conflict-resolution"
+  },
+  {
+    "id": "LQ-089",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "Dance EP tier information includes a removed Gold tier and pending written confirmation. How should Lancelot answer a question asking for all Dance tiers?",
+    "expected_answer_style": "conflict-resolution"
+  },
+  {
+    "id": "LQ-090",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "Junior Coach minimum age is described as configurable and believed to be 12 or 13, while another register lists a 12 to 17 working range. How should Lancelot answer without overclaiming?",
+    "expected_answer_style": "conflict-resolution"
+  },
+  {
+    "id": "LQ-091",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "EA Buddy minimum age is described as season-configurable and believed as low as 10, with exact value pending. What answer should preserve that uncertainty?",
+    "expected_answer_style": "conflict-resolution"
+  },
+  {
+    "id": "LQ-092",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "The wiki distinguishes Adult Athlete Active workflow state from the public-list Active axis. How should Lancelot avoid conflating them?",
+    "expected_answer_style": "conflict-resolution"
+  },
+  {
+    "id": "LQ-093",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "A same-name, same-DOB duplicate profile collision occurs with possible nickname and free-email issues. What heuristic and fallback approach does the wiki support?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-094",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "A blocked individual completes onboarding and payment before dashboard access. Explain the Jurisdiction Trap rationale and where the user is gated.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-095",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "A user asks whether the parent's own name/email in Parent/Minor onboarding runs through hold-list checks. What should Lancelot answer based on the open question?",
+    "expected_answer_style": "conflict-resolution"
+  },
+  {
+    "id": "LQ-096",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "A Code of Conduct countdown depends on Days. What does the wiki define, and what national-holiday uncertainty remains?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-097",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "A close-in-age exception is claimed as a defense based on good-faith belief about age. What conditions are required and what defenses are explicitly invalid?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-098",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "A club changes brand affiliation mid-season. Explain what the jump-ship flow supports, what timing restriction applies, and why it is invitation-driven.",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-099",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "A Worlds roster change happens after the lock date. What does the wiki say about the lock timing and how changes are handled afterward?",
+    "expected_answer_style": "multi-hop-analysis"
+  },
+  {
+    "id": "LQ-100",
+    "difficulty": "expert",
+    "category": "open-questions",
+    "question": "A verifier sees Lancelot cite only web search for a USASF Brain question. How should the verifier score source grounding and why?",
+    "expected_answer_style": "multi-hop-analysis"
+  }
+]
