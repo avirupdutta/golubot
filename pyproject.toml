@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "agno[slack]>=2.3.0",
+    "ddgs>=9.14.4",
     "fastapi>=0.124.0",
     "openai>=2.8.0",
     "python-dotenv>=1.2.0",

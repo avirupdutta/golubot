@@ -5,6 +5,9 @@ from agno.models.openai import OpenAIResponses
 from agno.os import AgentOS
 from agno.os.interfaces.slack import Slack
 from dotenv import load_dotenv
+from agno.tools.file import FileTools
+from agno.tools.websearch import WebSearchTools
+
 import uvicorn
 
 load_dotenv()
@@ -24,6 +27,7 @@ agent = Agent(
     ),
     debug_mode=True,
     debug_level=2,
+    tools=[FileTools(), WebSearchTools()],
 )
 
 agent_os = AgentOS(
